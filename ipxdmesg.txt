@@ -1,0 +1,46 @@
+motoko# dmesg
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 1.6.1 (GENERIC) #0: Wed Apr  9 03:02:04 UTC 2003
+    autobuild@tgm.daemon.org:/autobuild/netbsd-1-6/sparc/OBJ/autobuild/netbsd-1-
+6/src/sys/arch/sparc/compile/GENERIC
+total memory = 65392 KB
+avail memory = 60200 KB
+using 128 buffers containing 512 KB of memory
+bootpath: /sbus0/esp@0,800000/sd@3,0
+mainbus0 (root): SUNW,Sun 4/50
+cpu0 at mainbus0: cache chip bug; trap page uncached: W8601/8701 or MB86903 @ 40
+ MHz, on-chip FPU
+cpu0: 64K byte write-through, 32 bytes/line, hw flush: cache enabled
+memreg0 at mainbus0 ioaddr 0xf4000000
+clock0 at mainbus0 ioaddr 0xf2000000: mk48t02: hostid 57acbdef
+timer0 at mainbus0 ioaddr 0xf3000000 ipl 10: delay constant 17
+auxreg0 at mainbus0 ioaddr 0xf7400003
+zs0 at mainbus0 ioaddr 0xf1000000 ipl 12 softpri 6
+zstty0 at zs0 channel 0 (console i/o)
+zstty1 at zs0 channel 1
+zs1 at mainbus0 ioaddr 0xf0000000 ipl 12 softpri 6
+kbd0 at zs1 channel 0: baud rate 1200
+ms0 at zs1 channel 1: baud rate 1200
+audioamd0 at mainbus0 ioaddr 0xf7201000 ipl 13 softpri 4
+audio0 at audioamd0: full duplex
+sbus0 at mainbus0 ioaddr 0xf8000000: clock = 20 MHz
+dma0 at sbus0 slot 0 offset 0x400000: dma rev 1+
+esp0 at sbus0 slot 0 offset 0x800000 level 3: ESP100A, 20MHz, SCSI ID 7
+scsibus0 at esp0: 8 targets, 8 luns per target
+le0 at sbus0 slot 0 offset 0xc00000 level 5: address 08:00:20:ac:bd:ef
+le0: 8 receive buffers, 2 transmit buffers
+cgsix0 at sbus0 slot 3 offset 0x0 level 7: SUNW,501-1672, 1152 x 900, rev 8
+cgsix0: attached to /dev/fb
+fdc0 at mainbus0 ioaddr 0xf7200000 ipl 11 softpri 4: chip 82072
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+scsibus0: waiting 2 seconds for devices to settle...
+sd0 at scsibus0 target 3 lun 0: <IBM OEM, 0664M1H, 4 40> SCSI2 0/direct fixed
+sd0: 1920 MB, 2857 cyl, 15 head, 91 sec, 512 bytes/sect x 3933040 sectors
+sd0: sync (248.0ns offset 15), 8-bit (4.032MB/s) transfers, tagged queueing
+Kernelized RAIDframe activated
+root on sd0a dumps on sd0b
+root file system type: ffs

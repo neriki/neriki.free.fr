@@ -1,0 +1,214 @@
+Linux version 2.4.2-yopy1 (root@John) (gcc version 2.95.2 20000313 (Debian GNU/Linux)) #422 È­ 10¿ù 14 11:15:21 KST 2003
+Processor: Intel StrongARM-1110 revision 9
+Architecture: Yopy
+rd_image_start = 0x0
+rd_prompt = 1
+rd_doload = 1
+On node 0 totalpages: 12288
+zone(0): 12288 pages.
+zone(1): 0 pages.
+zone(2): 0 pages.
+Kernel command line: init=linuxrc console=ttyS0,115200
+Yopy mconsole driver 1.0
+Calibrating delay loop... 194.15 BogoMIPS
+Memory: 48MB = 48MB total
+Memory: 46972KB available (976K code, 293K data, 52K init)
+Dentry-cache hash table entries: 8192 (order: 4, 65536 bytes)
+Buffer-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Page-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 4096 (order: 3, 32768 bytes)
+POSIX conformance testing by UNIFIX
+Linux NET4.0 for Linux 2.4
+Based upon Swansea University Computer Society NET3.039
+Yopy Power Manager ver 0.1.0
+Starting kswapd v1.8
+kpmd: started
+Yopy FB driver ver 0.6.0
+arch_pm_register(2, 00000008)
+MediaQ generic module installed.
+pty: 256 Unix98 ptys configured
+Yopy Touch-screen driver ver 0.6
+arch_pm_register(6, 00000001)
+block: queued sectors max/low 31114kB/10371kB, 128 slots per queue
+rd_init
+RAMDISK driver initialized: 16 RAM disks of 8192K size 1024 blocksize
+SA1100 serial driver version 1.3
+arch_pm_register(1, 41D00500)
+ttyS0 on SA1100 UART3 (irq 17)
+ttyS1 on SA1100 UART1 (irq 15)
+ttyS2 on SA1100 UART2 (irq 16), using IRDA
+Real Time Clock Driver v1.09-yp3
+arch_pm_register(0, 00000000)
+SA1100 flash: probing for 4 partitions (buswidth = 4)
+SA1100: Found 2 x16 CFI devices at location 0 in 16 bit mode
+JEDEC ID: 89 18
+SA1100 flash access initialized
+NET4: Linux TCP/IP 1.0 for NET4.0
+IP Protocols: ICMP, UDP, TCP
+IP: routing cache hash table of 512 buckets, 4Kbytes
+TCP: Hash tables configured (established 4096 bind 4096)
+NET4: Unix domain sockets 1.0/SMP for Linux NET4.0.
+NetWinder Floating Point Emulator V0.95 (c) 1998-1999 Rebel.com
+VFS: Mounted root (cramfs filesystem) readonly.
+Freeing init memory: 52K
+rd_open
+rd_open
+rd_open
+rd_open
+JFFS2 version 2.1. (C) 2001 Red Hat, Inc., designed by Axis Communications AB.
+arch_pm_register(3, 00000000)
+SA1100 USB Controller Core Initialized
+usbctl: Opened for usb-eth
+usbctl: Started for usb-eth
+Linux PCMCIA Card Services 3.1.22
+  options:  [pm]
+arch_pm_register(9, 41D00E00)
+cs: received resume notification
+SA-1100 PCMCIA (CS release 3.1.22)
+count = 1
+pass1
+pass2
+pass3
+pass4
+sa1100: initialization complete
+Uniform Multi-Platform E-IDE driver Revision: 6.31
+ide: Assuming 50MHz system bus speed for PIO modes; override with idebus=xx
+hda: 32 MB F/W FLASH, ATA DISK drive
+ide0 at 0xf6000000-0xf6000007,0xf600000e on irq 9
+ide_cs: hda: Vcc = 3.3, Vpp = 0.0
+hda: bad special flag: 0x03
+hda: 62464 sectors (32 MB) w/1KiB Cache, CHS=488/4/32
+Partition check:
+ hda: hda1
+sector_size = 512(mult  1)
+cluster_size = 4
+arch_pm_register(4, 00000000)
+UDA1341 audio driver initialized
+TODO VT_ACTIVATE mcon_ioctl at 
+TODO VT_WAITACTIVE mcon_ioctl at 
+mmc driver ver0.2
+arch_pm_register(5, 08000000)
+card_pm_resume!
+usbctl: zombie suspended --> [resume] --> zombie. Device in powered state.
+usbctl: zombie --> [suspend] --> zombie suspended. Device in suspended state.
+usbctl: zombie suspended --> [reset] --> default. Device in default state.
+usbctl: Resetting
+usbctl: default --> [address assigned] --> address. Device in address state.
+usbep0: I have been assigned address: 2
+usbep0: Return string 1: 'SA1100 USB NIC'
+usbep0: Return string 1: 'SA1100 USB NIC'
+usbctl: address --> [configure] --> configured. Device in configured state.
+usbep0: Configured (OMP=00000040 IMP=00000040)
+usbep0: setup begin: unsupported bmRequestType: 2 ignored
+usbep0: setup begin: unsupported bmRequestType: 2 ignored
+usbep0: setup begin: unsupported bmRequestType: 2 ignored
+usbep0: setup begin: unsupported bmRequestType: 2 ignored
+usbctl: configured --> [suspend] --> config suspended. Device in suspended state.
+event flip = 0x20000
+pm: suspending 00000006
+pm: suspending 00000005
+card_pm_suspend!
+card_pm_suspend2!
+pm: suspending 00000003
+usbctl: Stopped
+pm: suspending 00000009
+cs: received suspend notification
+sa1100_pcmcia_suspend(): suspending socket 0
+pcmcia_suspend_socket()
+pm: suspending 00000009
+cs: received suspend notification
+pm: suspending 00000009
+cs: received suspend notification
+pm: suspending 00000004
+pm: suspending 00000002
+video suspending..
+sys_ctx.osmr0 = 0x4e9c0000
+sys_ctx.oscr  = 0x4e9b8602
+PGSR : 00C00020
+pm: sleeping
+serial pm_suspend!
+ICMR : DCF22B07
+ICIP : 50000804
+waking up 00000008, 00000002
+waking up 00000000, 00000003
+usbctl: Started for usb-eth
+usbctl: config suspended --> [reset] --> default. Device in default state.
+udc_device_reset
+waking up 08000000, 00000005
+card_pm_resume!
+waking up 41D00500, 00000001
+waking up 00000001, 00000006
+waking up 41D00E00, 00000009
+cs: received resume notification
+sa1100_pcmcia_init(): initializing socket 0
+ide0: unexpected interrupt, status=0x0c, count=1
+usbctl: default --> [suspend] --> default suspended. Device in suspended state.
+RUN STATE
+RUN STATE
+event = 0x1000
+pm: resumed
+Uniform Multi-Platform E-IDE driver Revision: 6.31
+ide: Assuming 50MHz system bus speed for PIO modes; override with idebus=xx
+hda: 32 MB F/W FLASH, ATA DISK drive
+ide0 at 0xf6000000-0xf6000007,0xf600000e on irq 9
+ide_cs: hda: Vcc = 3.3, Vpp = 0.0
+hda: bad special flag: 0x03
+hda: 62464 sectors (32 MB) w/1KiB Cache, CHS=488/4/32
+ hda: hda1
+sector_size = 512(mult  1)
+cluster_size = 4
+event flip = 0x20000
+pm: suspending 00000006
+pm: suspending 00000005
+card_pm_suspend!
+card_pm_suspend2!
+pm: suspending 00000003
+usbctl: Stopped
+pm: suspending 00000009
+cs: received suspend notification
+sa1100_pcmcia_suspend(): suspending socket 0
+pcmcia_suspend_socket()
+pm: suspending 00000009
+cs: received suspend notification
+pm: suspending 00000009
+cs: received suspend notification
+pm: suspending 00000004
+pm: suspending 00000002
+video suspending..
+sys_ctx.osmr0 = 0x54b58000
+sys_ctx.oscr  = 0x54b50604
+PGSR : 00C00020
+pm: sleeping
+serial pm_suspend!
+ICMR : DCF22B07
+ICIP : 50000804
+waking up 00000008, 00000002
+waking up 00000000, 00000003
+usbctl: Started for usb-eth
+usbctl: default suspended --> [reset] --> default. Device in default state.
+udc_device_reset
+waking up 08000000, 00000005
+card_pm_resume!
+waking up 41D00500, 00000001
+waking up 00000001, 00000006
+waking up 41D00E00, 00000009
+cs: received resume notification
+sa1100_pcmcia_init(): initializing socket 0
+ide0: unexpected interrupt, status=0x0c, count=1
+usbctl: default --> [suspend] --> default suspended. Device in suspended state.
+Trying to free nonexistent resource <f6000000-f6000007>
+Trying to free nonexistent resource <f600000e-f600000e>
+RUN STATE
+RUN STATE
+event = 0x1000
+pm: resumed
+Uniform Multi-Platform E-IDE driver Revision: 6.31
+ide: Assuming 50MHz system bus speed for PIO modes; override with idebus=xx
+hda: 32 MB F/W FLASH, ATA DISK drive
+ide0 at 0xf6000000-0xf6000007,0xf600000e on irq 9
+ide_cs: hda: Vcc = 3.3, Vpp = 0.0
+hda: bad special flag: 0x03
+hda: 62464 sectors (32 MB) w/1KiB Cache, CHS=488/4/32
+ hda: hda1
+sector_size = 512(mult  1)
+cluster_size = 4

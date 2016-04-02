@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Des ombres</title>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+<style>
+#texte{
+position:absolute;
+top:18px;
+left:17px;
+z-index:2;
+font-family:Arial,Times,sans-serif;
+font-size:55px;
+font-weight:bold;
+color:#555555;
+}
+
+#ombre{
+position:absolute;
+top:14px;
+left:8px;
+z-index:1;
+font-family:Arial,Times,sans-serif;
+font-size:55px;
+font-weight:bold;
+color:#BBBBBB;
+}
+</style>
+
+<script>
+function deplaceOmbre(x,y){
+	document.getElementById("ombre").style.left=x;
+	document.getElementById("ombre").style.top=y;
+}
+
+function initanim(){
+	x=12;
+	y=8;
+	incr=true;
+	anim(x,y,incr)
+	}
+
+function anim(x,y,incr){
+	if(x>24)incr=false;
+	if(x<10)incr=true;
+	if(incr){
+		x++;
+		y++;
+	}
+	else {
+		x--;
+		y--;
+	}
+	deplaceOmbre(x,y);
+	setTimeout("anim("+x+","+y+","+incr+");",103);
+	}
+</script>
+</head>
+<body onload="javascript:initanim();">
+<div id="texte">Si, on peut faire des ombres en CSS.
+</div>
+<div id="ombre">Si, on peut faire des ombres en CSS.
+</div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Sun Sparcstation</title>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="defaut" >
+<link rel="stylesheet" type="text/css" href="prtstyle.css" media="print" title="Impression" >
+<link rel="alternate stylesheet" type="text/css" href="altstyle.css" media="screen" title="Blanc" >
+</head>
+<body>
+<a id=haut name=haut></a>
+<img id="logo" alt="Chez Neriki" src="ordi.jpg">
+<div id="bandeau">SparcStation</div>
+<div id="menu">
+  <a class="itemm" href="index.html">Chez Neriki</a>
+  <a class="itemm" href="liens.html">Liens</a>
+  <a class="itemm" href="projets.php">Projets</a>
+  <a class="itemm" href="5120.html">IBM 5120</a>
+  <a class="itemms" href="sparcstation.html">SparcStation</a>
+  <!-- a class="itemm" href="falcon.html">Falcon 030</a>
+  <a class="itemm" href="next.html">NeXT Cube</a -->
+  <a class="itemm" href="yopy.html">Yopy (YP3700)</a>
+  <!-- a class="itemm" href="histounix.html">Unix (historique)</a -->
+</div>
+<div id="textecourt">
+<ul id="listeliens">
+ <li><a href="#pres">Pr&eacute;sentation</a></li>
+ <li><a href="#histo">Historique</a></li>
+ <li><a href="#nvram">Probl&egrave;me de NVRam</a></li>
+ <li><a href="#liens">Liens</a></li>
+</ul>
+<h1><a name="pres" class="ancre">&nbsp;</a>Pr&eacute;sentation</h1>
+<p>Sun produit encore de nos jours de puissantes stations Unix
+sous leur OS propri&eacute;taire: Solaris (ou SunOS). La gamme des SparcStation, (sun4, sun4c, sun4m) repr&eacute;sente
+ la premi&egrave;re gamme de  stations utilisants le processeur Sparc 32 bits. La gamme sera remplac&eacute;e
+ ensuite par la gamme des stations Ultra (sun4u), qui utilisent le processeur UltraSparc (version 64 bits du Sparc). 
+</p>
+<p>
+J'aime bien cette gamme de station Sun car, d'un part, c'est des stations Unix (firmware avanc&eacute;, possibilit&eacute; de booter sur le r&eacute;seau et scsi install&eacute; de s&eacute;rie...), et d'autre part, elle présente une grande vari&eacute;t&eacute; de format de bus (VME, Sbus, Mbus...) et de boitiers, 
+depuis le minuscule format lunchbox (par exemple la SparcStation IPC), proche du format des mini PC d'aujourd'huis, jusqu'aux &eacute;normes
+racks à cartes VME (le SparcServer 670 MP), proche de la taille d'un r&eacute;frig&eacute;rateur. </p>
+<span class="illustr"><a href="sparcclust.jpg"><img width="200px" height="288px" alt="Sparc LX et IPX" src="sparcclustpetit.jpg"></a>
+<br>Une SparcStation IPX et une LX.</span>
+<p> Je possède quatre machines de cette gamme:</p>
+<ul>
+<li><a href="http://unix.t001337.info/wakka.php?wiki=SparcStation1" >SparcStation 1</a>, la premi&egrave;re station de bureau &agrave; processeur Sparc. Elle inaugurait aussi le port Sbus et le boitier pizzabox carr&eacute;.</li>
+<li><a href="http://unix.t001337.info/wakka.php?wiki=SparcStationIPX" >SparcStation IPX</a> et
+<a href="http://unix.t001337.info/wakka.php?wiki=SparcStationLX" >SparcStation LX</a>, des stations au format lunchbox. L'avantage de ce genre de station est la possibilit&eacute;e d'avoir des vrais stations Unix dans un encombrement minimum. De plus, les périphériques SCSI Sun (lecteurs CD, Streamers et autres disques durs externes) de l'&eacute;poque avaient les m&ecirc;mes largeurs et longueurs que ces stations. D'ou la possibilit&eacute; d'entasser tout ce petit monde et d'avoir une grappe de serveurs possédants chacun plusieurs disques durs pour un encombrement au sol de 26 x 24 cm.</li>
+<li><a href="http://unix.t001337.info/wakka.php?wiki=SparcStation10" >SparcStation 10</a>, une station poss&eacute;dant des ports Mbus et Sbus. C'est s&ucirc;rement, avec la sparcstation 20, et la gamme des machines &agrave; bus VME, l'une des sparcstations les plus modulaires qui soit. Dans à peine 7 cm de hauteur, on peut caser 4 processeurs, 2 disques durs, 512 Mo de ram, et 4 cartes d'extensions au format Sbus.</li>
+</ul>
+<p>Certains sites Web ont pour habitude de montrer un dmesg de leurs machines, alors voici un dmesg d'une <a href="lxdmesg.txt" >SparcStation LX sous Linux</a> et d'une <a href="ipxdmesg.txt" >SparcStation IPX sous NetBSD</a>.</p>
+<p class="retour"><a href="#haut">Revenir en d&eacute;but de page</a></p>
+<h1><a class="ancre" name="histo">&nbsp;</a>Historique</h1>
+<p><a href="http://unix.t001337.info/wakka.php?wiki=Sparc" >Sparc</a> (Scalable Processor ARChitecture) est une norme d&eacute;crivant un processeur Risc, 
+introduite en 1987 par Sun pour remplacer les processeurs
+Motorola 68020 et 68030 qui &eacute;quipaient alors leurs stations. Plusieurs
+fabricants de microprocesseurs dont Fujitsu, Weitek, Texas Instrument
+produiront des processeurs Sparc. M&ecirc;me l'Agence Spatiale Europ&eacute;enne
+produira sa propre version du Sparc pour la recherche spatiale: le LEON. A noter que le LEON
+utilise une licence Open Source, et ce bien avant l'apparition du projet F-CPU.</p>
+<p>La gamme des stations et serveurs Sun &agrave; base de processeurs Sparc inaugure la gamme <a href="http://unix.t001337.info/wakka.php?wiki=Sun4" >SUN4</a>. La premi&egrave;re machine de cette gamme date de 1987. C'est la <a href="http://unix.t001337.info/wakka.php?wiki=4260" >4/260</a>, qui tournait &agrave; 16 Mhz. La premi&egrave;re &agrave; poss&eacute;der le nom SparcStation est la <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation1" >SparcStation 1</a>, sortie en 1989. Elle inaugure aussi le port d'extension <a href="http://unix.t001337.info/wakka.php?wiki=Sbus" >Sbus</a>. En m&ecirc;me temps, l'ensemble de la gamme Sun4 prend le nom SparcStation (par exemple la Sun <a href="http://unix.t001337.info/wakka.php?wiki=4330" >4/330</a> est renomm&eacute;e en SparcStation 330).</p>
+<p>En 1990 sortent la <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation1plus" >SparcStation 1+</a>, lifting de la SparcStation 1, la <a href="http://unix.t001337.info/wakka.php?wiki=SparcStationIPC" >SparcStation IPC</a>, premi&egrave;re station au format lunchbox et la <a href="http://unix.t001337.info/wakka.php?wiki=SparcStationSLC" >SparcStation SLC</a>, un moniteur noir et blanc dans lequel on a gliss&eacute; une carte m&egrave;re de SparcStation. L'ann&eacute;e suivante elles seront remplac&eacute;es respectivements par les <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation2" >SparcStation 2</a>, <a href="http://unix.t001337.info/wakka.php?wiki=SparcStationIPX" >SparcStation IPX</a> et <a href="http://unix.t001337.info/wakka.php?wiki=SparcStationELC" >SparcStations ELC</a>.</p>
+<p>Les SparcStation 2 et IPX sont remplac&eacute;es en 1993 par la <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation10" >SparcStation 10</a> pour la premi&egrave;re et les <a href="http://unix.t001337.info/wakka.php?wiki=SparcStationLX" >SparcStations LX</a> et <a href="http://unix.t001337.info/wakka.php?wiki=SparcClassic" >SparcClassic</a> pour la seconde. Si les SparcClassic et SparcStation LX n'innovent pas beaucoup par rapport à l'IPX, ce n'est pas le cas de la SparcStation 10.
+Celle ci, qui &agrave; l'origine se nommait SparcStation 3, introduit le port <a href="http://unix.t001337.info/wakka.php?wiki=Mbus" >Mbus</a>, permettant de changer le processeur facilement. Son architecture interne change aussi. Elle accepte plus de m&eacute;moire et plus de cartes Sbus. Elle accepte également plus d'un processeur.</p>
+<p>En 1994 sortent les <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation4" >SparcStation 4</a>, <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation5" >5</a>, <a href="http://unix.t001337.info/wakka.php?wiki=SparcStation20" >20</a> et <a href="http://unix.t001337.info/wakka.php?wiki=SparcStationVoyager" >Voyager</a>. Les SparcStation 4, 5 et 20 utilisent le m&ecirc;me boitier <a href="http://unix.t001337.info/wakka.php?wiki=Aurora" >Aurora</a>. La 4 représente le bas de gamme, la 5 le milieu de gamme et la 20 le haut de gamme. Les SparcStations 4 et 5 poss&egrave;dent un processeur soud&eacute; à la carte m&egrave;re. La 20 reprend beaucoup de caract&eacute;ristique de la SparcStation 10, dont 2 ports Mbus et 4 ports Sbus. La SparcStation Voyager est une station int&eacute;grant dans l'unité centrale, un écran LCD 12 ou 14 pouces en couleurs ou &agrave; niveaux de gris et des ports PCMCIA et infrarouge.</p>
+<p>Les SparcStations seront ensuites remplac&eacute;es par la gamme Ultra (<a href="http://unix.t001337.info/wakka.php?wiki=sun4u" >SUN4U</a>) avec l'<a href="http://unix.t001337.info/wakka.php?wiki=Ultra1" >Ultra 1</a>, la premi&egrave;re station 64 bits de Sun (novembre 1995). La SparcStation 5 sera gardée en production encore quelque temps, comme entrée de gamme. L'architecture Sparc 32bits sera aussi utilis&eacute;e dans les JavaStations.</p> 
+<p class="retour"><a href="#haut">Revenir en d&eacute;but de page</a></p>
+
+<h1><a class="ancre" name="nvram">&nbsp;</a>Probl&egrave;me de NVRam</h1>
+<p>Les stations Sun possède en ROM l'OpenBoot, &eacute;quivalent du BIOS des PC. L'OpenBoot est une puissante ligne de commande programmable en Forth qui permet de faire un diagnostique de la machine, de d&eacute;finir les param&egrave;tre du boot, l'adresse Ethernet de la carte r&eacute;seau et d'autre param&egrave;tres. Pour en savoir plus sur l'OpenBoot, vous pouvez consulter sa <a href="http://www.itworld.com/AppDev/616/UIR951001openboot/pfindex.html" >FAQ</a>.</p>
+<p>A partir des SparcStation, les stations Sun stockent les param&egrave;tres de l'OpenBoot dans une <a href="http://fr.wikipedia.org/wiki/NVRAM" >NVRAM</a> (Non Volatile RAM), un composant ram qui possède sa propre alimentation, et qui n'est donc pas effac&eacute; &agrave; l'extinction de la machine. L'avantage de ce genre de solution est par exemple l'impossibilit&eacute; d'effacer le mot de passe de l'OpenBoot simplement en enlevant la pile, puisque le tout est regroup&eacute; dans un seul composant. Le probl&egrave;me est qu'une fois la pile int&eacute;gr&eacute;e &agrave; la NVRAM morte, il faut remplac&eacute; le composant en entier.</p>
+<p>A cause de leur age, les SparcStations poss&egrave;dent souvent une NVRAM d&eacute;fectueuse. Celle ci emp&egrave;che la station de booter normalement. Une solution temporaire consiste &agrave; reprogrammer la NVRAM &agrave; chaque boot. La solution d&eacute;finitive consiste soit &agrave; remplacer la NVRAM, soit &agrave; la r&eacute;parer.</p>
+<p>La r&eacute;paration consiste &agrave; remplacer la pile int&eacute;gr&eacute;e. Cette solution est d&eacute;crite sur <a href="http://www.bhargavaz.net/nvram/nvram.html" >cette page</a>. Cette op&eacute;ration est d&eacute;licate. L'autre solution consiste &agrave; trouver une NVRAM neuve ou un composant &eacute;quivalent. C'est la solution que j'ai choisi. Il m'a suffi de commander un &eacute;chantillon aupr&egrave;s de <a href="http://www.maxim-ic.com/" >maxim-ic</a>. La r&eacute;f&eacute;rence est DS1642, &agrave; prendre en 70ns. Maxim envoi deux &eacute;chantillons gratuits &agrave; qui en fait la demande.</p>
+<p> Une fois la NVRAM remplac&eacute;e, ou avec la NVRAM d&eacute;fectueuse si vous ne voulez booter qu'une fois, il faut reprogrammer celle ci. Cette op&eacute;ration se fait en acc&eacute;dant à l'OpenBoot par l'appui simultan&eacute; des touches STOP et A ou par l'envoi du caract&egrave;re ESCAPE si la station utilise un terminal sur le port console. Un menu apparait alors proposant entre autre un "new command mode". Appuyez sur n pour entrer dans celui ci.</p>
+<p>Une fois dans l'OpenBoot, pour une SparcStation IPC, entrez la s&eacute;quence de commandes suivante:</p>
+<ol>
+<li>set-defaults</li>
+<li>1 0 mkp</li>
+<li>52 1 mkp</li>
+<li>8 2 mkp</li>
+<li>0 3 mkp</li>
+<li>20 4 mkp</li>
+<li>c0 5 mkp</li>
+<li>ff 6 mkp</li>
+<li>ee 7 mkp</li>
+<li>0 8 mkp</li>
+<li>0 9 mkp</li>
+<li>0 a mkp</li>
+<li>0 b mkp</li>
+<li>c0 c mkp</li>
+<li>ff d mkp</li>
+<li>ee e mkp</li>
+<li>0 f 0 do i idprom@ xor loop f mkp</li>
+</ol>
+<p>On a d&eacute;fini ici le type de machine &agrave; la ligne 3, l'adresse Ethernet 08:00:20:c0:ff:ee de la ligne 4 &agrave; 9, le HostID de la ligne 14 &agrave; 16 et enfin on calcul un checksum &agrave; la ligne 17. Le HostID et l'adresse Ethernet peuvent &ecirc;tre choisi par l'utilisateur (attention &agrave; ne pas prendre d'adresse Ethernet deja utilis&eacute;e sur le r&eacute;seau.). Le type de machine est d&eacute;termin&eacute; par le tableau suivant (pour les stations &agrave; base de Sparc):</p>
+<table>
+<tr><th>Type</th><th>Station</th></tr>
+<tr><td>21</td><td>4/2x0</td></tr>
+<tr><td>22</td><td>4/1x0</td></tr>
+<tr><td>23</td><td>4/3x0</td></tr>
+<tr><td>24</td><td>4/4x0</td></tr>
+<tr><td>51</td><td>SparcStation 1</td></tr>
+<tr><td>52</td><td>SparcStation IPC</td></tr>
+<tr><td>53</td><td>SparcStation 1+</td></tr>
+<tr><td>54</td><td>SparcStation SLC</td></tr>
+<tr><td>55</td><td>SparcStation 2</td></tr>
+<tr><td>56</td><td>SparcStation ELC</td></tr>
+<tr><td>57</td><td>SparcStation IPX</td></tr>
+<tr><td>61</td><td>4/e</td></tr>
+<tr><td>71</td><td>4/6x0</td></tr>
+<tr><td>72</td><td>SparcStation 10 or SparcStation 20</td></tr>
+<tr><td>80</td><td>SparcStation Classic, LX, 4, 5, SS1000, Voyager, Ultra 1</td></tr>
+</table>
+<p>Une fois la NVRAM reprogrammée, il suffit de booter avec la commande "boot" (par exemple "boot cdrom" pour booter sur le cdrom).</p>
+<p>Pour plus de d&eacute;tail sur la NVRAM, vous pouvez consulter la <a href="http://www.squirrel.com/squirrel/sun-nvram-hostid.faq.html" >FAQ sur la NVRAM</a></p>
+<p class="retour"><a href="#haut">Revenir en d&eacute;but de page</a></p>
+<h1><a class="ancre" name="liens">&nbsp;</a>Liens</h1>
+<ul>
+<li><a href="http://www.sun.com/aboutsun/coinfo/history.html">Historique de Sun</a></li>
+<li><a href="http://www.itworld.com/AppDev/616/UIR951001openboot/pfindex.html">FAQ OpenBoot</a></li>
+<li><a href="http://www.squirrel.com/squirrel/sun-nvram-hostid.faq.html">FAQ sur les NVRAM</a></li>
+<li><a href="http://www.znark.com/tech/solarisinstall.html">Installation r&eacute;seau de Solaris &agrave; partir de Linux</a></li>
+<li><a href="http://www.sunquebec.com">Sun Qu&eacute;bec</a></li>
+<li><a href="http://fr.solaris-x86.org">Solaris fr</a></li>
+<li><a href="http://www.sunstuff.org/"> Online  Sun  Information  ArcHive</a></li>   
+<li><a href="http://www.soupwizard.com/sun2/">Sun2 Archive</a></li>
+<li><a href="http://www.sun3zoo.de/en/">The Sun3 zoo, une collection de station Sun3</a></li>   
+<li><a href="http://mo5.com/musee/recherche/firmes.php?firme=sun&amp;exacte=1">Les ordinateurs Sun chez Mo5.com</a></li>
+<li><a href="http://mbus.sunhelp.org">Un guide pour les modules MBus</a></li>
+<li><a href="http://www.milestonesolutions.com/voyager/">Une page sur la SparcStation Voyager</a></li>
+<li><a href="http://howtos.linux.com/howtos/SPARC-HOWTO.shtml">Linux Sparc Howto</a></li>
+<li><a href="http://www.tldp.org/HOWTO/JavaStation-HOWTO/">Linux Java Stations Howto</a></li>
+</ul>
+
+</div>
+</body>
+</html>

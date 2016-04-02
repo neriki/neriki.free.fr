@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Historique d'Unix</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="defaut" >
+<link rel="stylesheet" type="text/css" href="prtstyle.css" media="print" title="Impression" >
+<link rel="alternate stylesheet" type="text/css" href="altstyle.css" media="screen" title="Bleu" >
+</head>
+<body>
+<a id=haut name=haut></a>
+<img id="logo" alt="Chez Neriki" src="ordi.jpg">
+<div id="bandeau">N E R I K I</div>
+<div id="menu">
+  <a class="itemm" href="index.html">Chez Neriki</a>
+  <a class="itemm" href="liens.html">Liens</a>
+  <a class="itemm" href="mediabox.html">Projets</a>
+  <a class="itemm" href="5120.html">IBM 5120</a>
+  <a class="itemm" href="sparcstation.html">SparcStation</a>
+  <a class="itemm" href="falcon.html">Falcon 030</a>
+  <a class="itemm" href="next.html">NeXT Cube</a>
+  <a class="itemm" href="yopy.html">Yopy (YP3700)</a>
+  <a class="itemms" href="histounix.html">Unix (historique)</a>
+</div>
+<div id="textecourt">
+<p>Un petit historique des syst&egrave;mes d'exploitations et d'Unix en particulier.</p>
+<ul id="listeliens">
+<li><a href="#batch">Les systèmes Batch</a></li>
+<li><a href="#ts">La multiprogrammation et le temps partagé</a></li>
+<li><a href="#unix">Unix</a></li>
+</ul>
+<h1><a class="ancre" name="batch" >&nbsp;</a>Les systèmes Batch</h1>
+<p>
+Dans les années 45-55, quand un programmeur voulait concevoir et exécuter son programme sur un ordinateur, il commençait par l'écrire sur des cartes perforées, puis il donnait les cartes perforées à un opérateur qui chargeait la programme sur l'ordinateur, puis, qui lançait ensuite le programme et récupérait le listing en sortie de l'ordinateur, sur l'imprimante, et enfin chargeait l'ordinateur avec une nouvelle suite de cartes perforées. Une grande partie du temps de calcul était perdu à cause des opérations de chargement des cartes perforées et d'impression du listing de sortie.
+</p>
+<p>
+Au milieu des années 50, pour gagner du temps on utilisait un gros ordinateur pour les calculs (par ex un IBM 7094) et un plus petit (par ex un IBM 1401) pour la lecture des cartes perforées et l'impression des résultats. Le processus se déroulait de la façons suivantes: Un opérateur chargeait les cartes perforées sur un IBM 1401 qui les écrivait sur une bande magnétique, la bande magnétique était alors apportée sur le gros IBM 7094, celui ci exécutait le programme et écrivait le résultat sur une autre bande magnétique, cette bande était alors apportée sur l'IBM 1401 qui imprimait le résultat. Les opérations de chargement des cartes perforées et d'impression des résultats et les opérations de calculs se déroulaient ainsi en même temp. On pouvait aussi charger plusieurs programmes les un à la suite des autres sur la bande magnétiques, il serait ainsi exécuté séquentiellement, c'est ce qu'on appelle le système batch.
+</p>
+<p>
+En 1969 Kenneth Thompson, du Bell Labs trouva un ordinateur DEC PDP inutilisé et décida d'écrire dessus une version simplifiée de MULTICS, qu'il baptisa UNICS. Cette première version était écrite en assembleur, elle sera ensuite réécrite en C, langage que Dennis Ritchie, un collègue de Kenneth Thompson, venait juste de sortir. UNICS sera ensuite rebaptisé Unix. AT&amp;T, propriétaire du Bell's Labs commença à distribuer Unix à plusieurs universités entre 1973 et 1974. L'université de Berkeley trouva le système très intéressant et le modifia pour son usage. Il distribueront ensuite leur version modifiée d'Unix sous le nom de Berkeley Software Distribution ou BSD.
+</p>
+<p>
+Pendant les années 80 apparaîtront de nombreuses versions commerciales ou non d'Unix dérivées soit de la version d'AT&amp;T, soit de la version BSD. AT&amp;T arrêteront leur version en 1989. La version BSD est toujours distribuée aujourd’hui sous plusieurs versions différentes : FreeBSD, OpenBSD, NetBSD...
+</p>
+<p>
+La déferlante des entreprises vendants des versions d'Unix va provoquer une exode des têtes pensantes des laboratoires de recherches vers ces entreprises. Un chercheur du MIT, Richard Stallman, découvre un jour que le travail qui se faisait jusqu'ici de façon transparente et qui était partagé par tous était maintenant réalisé dans le secret des centres de recherche d'entreprises commerciales et n'était plus accessible sans versement de royalties. Il décide donc de créer sa version d'unix. Il la baptise GNU pour GNU is Not Unix. Le projet GNU vise la réécriture complète du système unix et de ses outils. Tout les logiciels réécrits seront placés sous une nouvelle licence, elle aussi créé par Richard Stallman, la GPL, et seront réutilisable librement par tout le monde.
+</p>
+<p>
+Au milieu des années 80, un professeur de l'université libre d’Amsterdam, Andrew Tanenbaum publie un ouvrage sur les systèmes d'exploitation. Pour accompagner son discours, il décide d'écrire une version allégée d'Unix à usage pédagogique: Minix. Au début des année 90, un étudiant finlandais, Linus Torvalds, acquiert l'ouvrage d'Andrew Tanenbaum et Minix. En voulant simplement écrire un émulateur de terminal, celui fourni avec Minix ne lui convenant pas, il ira jusqu'a réécrire un système d'exploitation basé sur les outils GNU: Linux.
+</p>
+<p class="retour"><a href="#haut">Revenir en d&eacute;but de page</a></p>
+<h1><a class="ancre" name="ts" >&nbsp;</a>La multiprogrammation et le temps partagé</h1>
+<p>
+Le problème du système batch était qu'il fallait entretenir deux systèmes particulièrements différents, l'un était optimisé pour l'impression et la lecture de carte perforées tandis que l'autre était plus particulièrement destiné au calcul. C'est ainsi qu'IBM eut l'idée d'introduire un nouveau système capable d'effectuer des opérations aussi différentes à partir de la même architecture. Le petit ordinateur capable d'imprimer et de lire les cartes perforées avait la même architecture que le gros système destiné au calcul scientifique, il était juste moins puissant.  L'entreprise qui avait acquis un petit système pouvait donc passer au gros systèmes en utilisant toujours le même programme. C’est la série des systèmes IBM 360. Ceux ci était accompagnés d'un logiciel appelé OS/360, son système d'exploitation.
+</p>
+<p>
+OS/360 apportait aussi le concept de multiprogrammation. Avant la série des IBM 360, quand un programme écrivait ou lisait un périphérique, (Lecteur de bande ou de carte, imprimante) le programme s'arrêtait et le processeur était inutilisé. Dans les systèmes scientifiques cette attente était peu courante, car une grande partie des processus consistait en une suite de calcul, mais dans les systèmes utilisés par les banques ou les assurance, ou le système était surtout mis à profit pour lire des cartes perforées, le processeur restait inutilisé quasiment 90 % du temps. Le concept de multiprogrammation découpe la mémoire en plusieurs zones contenant chacune un programme. Quand un programme faisait des opérations d'entrée sortie, un autre programme utilisait le processeur pour calculer, ainsi le processeur restait utilisé à 100%.
+</p>
+<p>
+Est apparu ensuite la notion de time sharing, une variante de la multiprogrammation, ou les programmes en mémoires ont chacun droit au processeur pendant un temps précis. Le premier système proposant le time-sharing fut CTSS (Compatible Time Sharing System) développé au M.I.T. en 1962.
+</p>
+<p>
+M.I.T. Bell Labs et General Electric décidèrent de développer un autre système sur la lignée de CTSS: MULTICS (MULTiplexed Information and Computing Service) en 1966. MULTICS était un projet ambitieux qui ne trouva pas beaucoup d'acheteurs, mais ceux ci étaient fidèles : le dernier système MULTICS fut arrété à la fin de l’année 2000. Un des concepts de MULTICS était copié sur la fourniture du courant domestique: quand une personne voulait du courant, elle branchait son appareil à une prise reliée à une centrale et elle avait du courant; pour MULTICS, quand une personne voulait de la puissance de calcul, elle branchait son terminal à une prise reliée a un ordinateur et elle obtenait accès à l'ordinateur. C'est ainsi que MULTICS était conçu pour recevoir plusieurs centaines de personnes en même temps.
+</p>
+<p>
+En 1969 Kenneth Thompson, du Bell Labs trouva un ordinateur DEC PDP inutilisé et décida d'écrire dessus une version simplifiée de MULTICS, qu'il baptisa UNICS. Cette première version était écrite en assembleur, elle sera ensuite réécrite en C, langage que Dennis Ritchie, un collègue de Kenneth Thompson, venait juste de sortir. UNICS sera ensuite rebaptisé Unix. AT&amp;T, propriétaire du Bell's Labs commença à distribuer Unix à plusieurs universités entre 1973 et 1974. L'université de Berkeley trouva le système très intéressant et le modifia pour son usage. Il distribueront ensuite leur version modifiée d'Unix sous le nom de Berkeley Software Distribution ou BSD.
+</p>
+<p>
+Pendant les années 80 apparaîtront de nombreuses versions commerciales ou non d'Unix dérivées soit de la version d'AT&amp;T, soit de la version BSD. AT&amp;T arrêteront leur version en 1989. La version BSD est toujours distribuée aujourd’hui sous plusieurs versions différentes : FreeBSD, OpenBSD, NetBSD...
+</p>
+<p>
+La déferlante des entreprises vendants des versions d'Unix va provoquer une exode des têtes pensantes des laboratoires de recherches vers ces entreprises. Un chercheur du MIT, Richard Stallman, découvre un jour que le travail qui se faisait jusqu'ici de façon transparente et qui était partagé par tous était maintenant réalisé dans le secret des centres de recherche d'entreprises commerciales et n'était plus accessible sans versement de royalties. Il décide donc de créer sa version d'unix. Il la baptise GNU pour GNU is Not Unix. Le projet GNU vise la réécriture complète du système unix et de ses outils. Tout les logiciels réécrits seront placés sous une nouvelle licence, elle aussi créé par Richard Stallman, la GPL, et seront réutilisable librement par tout le monde.
+</p>
+<p>
+Au milieu des années 80, un professeur de l'université libre d’Amsterdam, Andrew Tanenbaum publie un ouvrage sur les systèmes d'exploitation. Pour accompagner son discours, il décide d'écrire une version allégée d'Unix à usage pédagogique: Minix. Au début des année 90, un étudiant finlandais, Linus Torvalds, acquiert l'ouvrage d'Andrew Tanenbaum et Minix. En voulant simplement écrire un émulateur de terminal, celui fourni avec Minix ne lui convenant pas, il ira jusqu'a réécrire un système d'exploitation basé sur les outils GNU: Linux.
+</p>
+<p class="retour"><a href="#haut">Revenir en d&eacute;but de page</a></p>
+<h1><a class="ancre" name="unix" >&nbsp;</a>Unix</h1>
+<p>
+En 1969 Kenneth Thompson, du Bell Labs trouva un ordinateur DEC PDP inutilisé et décida d'écrire dessus une version simplifiée de MULTICS, qu'il baptisa UNICS. Cette première version était écrite en assembleur, elle sera ensuite réécrite en C, langage que Dennis Ritchie, un collègue de Kenneth Thompson, venait juste de sortir. UNICS sera ensuite rebaptisé Unix. AT&amp;T, propriétaire du Bell's Labs commença à distribuer Unix à plusieurs universités entre 1973 et 1974. L'université de Berkeley trouva le système très intéressant et le modifia pour son usage. Il distribueront ensuite leur version modifiée d'Unix sous le nom de Berkeley Software Distribution ou BSD.
+</p>
+<p>
+Pendant les années 80 apparaîtront de nombreuses versions commerciales ou non d'Unix dérivées soit de la version d'AT&amp;T, soit de la version BSD. AT&amp;T arrêteront leur version en 1989. La version BSD est toujours distribuée aujourd’hui sous plusieurs versions différentes : FreeBSD, OpenBSD, NetBSD...
+</p>
+<p>
+La déferlante des entreprises vendants des versions d'Unix va provoquer une exode des têtes pensantes des laboratoires de recherches vers ces entreprises. Un chercheur du MIT, Richard Stallman, découvre un jour que le travail qui se faisait jusqu'ici de façon transparente et qui était partagé par tous était maintenant réalisé dans le secret des centres de recherche d'entreprises commerciales et n'était plus accessible sans versement de royalties. Il décide donc de créer sa version d'unix. Il la baptise GNU pour GNU is Not Unix. Le projet GNU vise la réécriture complète du système unix et de ses outils. Tout les logiciels réécrits seront placés sous une nouvelle licence, elle aussi créé par Richard Stallman, la GPL, et seront réutilisable librement par tout le monde.
+</p>
+<p>
+Au milieu des années 80, un professeur de l'université libre d’Amsterdam, Andrew Tanenbaum publie un ouvrage sur les systèmes d'exploitation. Pour accompagner son discours, il décide d'écrire une version allégée d'Unix à usage pédagogique: Minix. Au début des année 90, un étudiant finlandais, Linus Torvalds, acquiert l'ouvrage d'Andrew Tanenbaum et Minix. En voulant simplement écrire un émulateur de terminal, celui fourni avec Minix ne lui convenant pas, il ira jusqu'a réécrire un système d'exploitation basé sur les outils GNU: Linux.
+</p>
+<p class="retour"><a href="#haut">Revenir en d&eacute;but de page</a></p>
+</div>
+</body>
+</html>
+

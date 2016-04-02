@@ -1,0 +1,81 @@
+
+PROMLIB: Sun Boot Prom Version 3 Revision 2
+Linux version 2.2.20 (root@auric) (gcc version 2.95.2 20000220 (Debian GNU/Linux)) #1 Fri Nov 16 15:48:02 EST 2001
+ARCH: SUN4M
+TYPE: SPARCstation LX
+Ethernet address: 8:0:20:18:98:dc
+Boot time fixup v1.6. 4/Mar/98 Jakub Jelinek (jj@ultra.linux.cz). Patching kernel for srmmu[TI Tsunami]/iommu
+[0]: v[f0000000,f1fe0000](1fe0000) p[00000000]
+[1]: v[f1fe8000,f1fe9000](1000) p[01fe8000]
+[2]: v[f2000000,f47c3000](27c3000) p[02000000]
+SRMMU: Compact physical memory. Using strightforward VA<->PA translations.
+sunlinux:/home/neriki# dmesg
+PROMLIB: Sun Boot Prom Version 3 Revision 2
+Linux version 2.2.20 (root@auric) (gcc version 2.95.2 20000220 (Debian GNU/Linux)) #1 Fri Nov 16 15:48:02 EST 2001
+ARCH: SUN4M
+TYPE: SPARCstation LX
+Ethernet address: 8:0:20:18:98:dc
+Boot time fixup v1.6. 4/Mar/98 Jakub Jelinek (jj@ultra.linux.cz). Patching kernel for srmmu[TI Tsunami]/iommu
+[0]: v[f0000000,f1fe0000](1fe0000) p[00000000]
+[1]: v[f1fe8000,f1fe9000](1000) p[01fe8000]
+[2]: v[f2000000,f47c3000](27c3000) p[02000000]
+SRMMU: Compact physical memory. Using strightforward VA<->PA translations.
+Found CPU 0 <node=ffd31a2c,mid=0>
+Found 1 CPU prom device tree node(s).
+Power off control detected.
+Calibrating delay loop... 49.86 BogoMIPS
+Memory: 70544k available (1340k kernel code, 1308k data, 168k init) [f0000000,f5000000]
+Dentry hash table entries: 16384 (order 5, 128k)
+Buffer cache hash table entries: 131072 (order 7, 512k)
+Page cache hash table entries: 32768 (order 5, 128k)
+POSIX conformance testing by UNIFIX
+IOMMU: impl 4 vers 1 page table at f4780000 of size 262144 bytes
+sbus0: Clock 25.0 MHz
+dma0: Revision 2 
+dma1: Revision 2 
+Linux NET4.0 for Linux 2.2
+Based upon Swansea University Computer Society NET3.039
+NET4: Unix domain sockets 1.0 for Linux NET4.0.
+NET4: Linux TCP/IP 1.0 for NET4.0
+IP Protocols: ICMP, UDP, TCP, IGMP
+TCP: Hash tables configured (ehash 131072 bhash 65536)
+Linux IP multicast router 0.06 plus PIM-SM
+Starting kswapd v 1.5 
+Sparc Zilog8530 serial driver version 1.41.2.9
+tty00 at 0xffee8004 (irq = 44) is a Zilog8530
+tty01 at 0xffee8000 (irq = 44) is a Zilog8530
+tty02 at 0xffee3004 (irq = 44) is a Zilog8530
+tty03 at 0xffee3000 (irq = 44) is a Zilog8530
+keyboard: not present
+Console: ttyS0 (Zilog8530)
+pty: 256 Unix98 ptys configured
+Sun Mouse-Systems mouse driver version 1.00
+RAM disk driver initialized:  16 RAM disks of 4096K size
+loop: registered device at major 7
+Floppy drive(s): fd0 is 1.44M
+md driver 0.36.6 MAX_MD_DEV=4, MAX_REAL=8
+esp0: IRQ 36 SCSI ID 7 Clk 40MHz CCF=8 TOut 167 NCR53C9XF(espfast)
+ESP: Total of 1 ESP hosts found, 1 actually in use.
+scsi0 : Sparc ESP100A-FAST
+scsi : 1 host.
+  Vendor: SEAGATE   Model: ST1480   SUN0424  Rev: 8628
+  Type:   Direct-Access                      ANSI SCSI revision: 02
+Detected scsi disk sda at scsi0, channel 0, id 3, lun 0
+scsi : detected 1 SCSI disk total.
+esp0: target 3 [period 200ns offset 15 5.00MHz synchronous SCSI]
+SCSI device sda: hdwr sector= 512 bytes. Sectors= 843284 [411 MB] [0.4 GB]
+sunlance.c:v1.12 11/Mar/99 Miguel de Icaza (miguel@nuclecu.unam.mx)
+eth0: LANCE 08:00:20:18:98:dc 
+eth0: using auto-carrier-detection.
+Partition check:
+ sda: sda1 sda2
+VFS: Mounted root (ext2 filesystem) readonly.
+init[1]: Unimplemented SPARC system call 69
+Adding Swap: 54352k swap-space (priority -1)
+eth0: Carrier Lost, trying TPE
+cp[88]: Unimplemented SPARC system call 69
+mv[105]: Unimplemented SPARC system call 69
+inetd[132]: Unimplemented SPARC system call 53
+mysqld[178]: Unimplemented SPARC system call 69
+atd[202]: Unimplemented SPARC system call 69
+
